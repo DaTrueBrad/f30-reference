@@ -14,6 +14,13 @@ const GlobalContextProvider = (props) => {
     switch(action.type) {
       case "CHANGENAME":
         return {...state, name: action.payload}
+      case "INCREASE":
+        return {...state, count: state.count + 5}
+      case "DECREASE":
+        return {...state, count: state.count - 1}
+      case "ADDTOLIST":
+        const newList = [...state.list, action.payload]
+        return {...state, list: newList}
       default:
         return state
     }
