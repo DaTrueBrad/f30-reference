@@ -4,6 +4,7 @@ import EffectComponent from '../components/EffectComponent'
 import RefComponent from '../components/RefComponent'
 import ContextComponent from '../components/ContextComponent'
 import Interact from '../components/Interact'
+import ReduxComponent from '../components/ReduxComponent'
 
 const ReferenceScreen = () => {
   return (
@@ -14,6 +15,7 @@ const ReferenceScreen = () => {
       <RefComponent />
       <ContextComponent />
       <Interact />
+      <ReduxComponent />
     </div>
   )
 }

@@ -9,8 +9,14 @@ module.exports = {
       autoIncrement: true,
       type: DataTypes.INTEGER
     },
-    username: DataTypes.STRING,
-    password: DataTypes.STRING
+    username: {
+      type: DataTypes.STRING({length: 20}),
+      allowNull: false
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   }),
   Product: db.define("product", {
     id: {
